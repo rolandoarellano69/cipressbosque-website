@@ -22,16 +22,16 @@ const Header = () => {
             </div>
         <div className='hidden md:block'>
           <div className='ml-4 flex items-center space-x-4'>
-            <Link to='home' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700'>
+            <Link to='home' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
               Ciprés
             </Link>
-            <Link to='planta-arq' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700'>
+            <Link to='planta-arq' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
            Modelos
             </Link>
-            <Link to='ubi' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700'>
+            <Link to='ubi' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
               Ubicación
             </Link>
-            <Link to='/blog' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700'>
+            <Link to='/blog' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
               Contacto
             </Link>
             

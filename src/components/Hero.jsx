@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll'
 import { RiMapPinRangeLine, RiMapPinUserFill } from 'react-icons/ri'
 
 
@@ -31,16 +31,16 @@ const Hero = () => {
 
           <div className="mt-8 flex flex-wrap gap-4  text-center">
             < Link
-              to="/"
-              className="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-secondary focus:outline-none focus:ring active:bg-primary sm:w-auto"
+              to="contacto"
+              className="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-secondary focus:outline-none focus:ring active:bg-primary sm:w-auto cursor-pointer"
             >
               Contacto
               <RiMapPinUserFill className=' items-center  inline-block ml-2 text-gray-200' size='1.5rem' />
             </Link>
 
             <Link
-              to="/"
-              className="flex justify-center items-center w-full rounded bg-white  px-12 py-3 text-sm font-medium text-secondary shadow hover:text-secondary focus:outline-none focus:ring active:text-secondary sm:w-auto"
+              to="ubi"
+              className="flex justify-center items-center w-full rounded bg-white  px-12 py-3 text-sm font-medium text-secondary shadow hover:text-secondary focus:outline-none focus:ring active:text-secondary cursor-pointer sm:w-auto"
             >Ubicación
               <RiMapPinRangeLine className=' items-center inline-block ml-2 text-primary' size='1.5rem' />
             </Link>
