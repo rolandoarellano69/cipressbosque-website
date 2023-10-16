@@ -55,7 +55,7 @@ const Footer = () => {
 
       {/* Derechos de autor */}
       <div className="text-center mb-20">
-        <Link to="/aviso-privacidad" className='flex items-center justify-center p-4 uppercase text-lg sm:text-base'>Aviso de privacidad</Link>
+        <a href="/aviso-privacidad" className='flex items-center justify-center p-4 uppercase text-lg sm:text-base cursor-pointer'>Aviso de privacidad</a>
         <p className="text-sm text-gray-200">
           COPYRIGHT © 2023. ALL RIGHTS RESERVED.
         </p>

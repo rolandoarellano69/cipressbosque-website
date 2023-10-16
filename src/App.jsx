@@ -11,6 +11,7 @@ import Mapa from './components/Mapa'
 import Footer from './components/Footer'
 import Page404 from './assets/pages/Page404'
 import AvisoPrivacidad from './assets/pages/AvisoPrivacidad'
+import BtnWhatsapp from './components/BtnWhatsapp'
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const HomePage = () => {
       <Family2 />
       <Mapa />
       <Requi />
+      <BtnWhatsapp /> 
       <Footer />
       </div>
     </>
