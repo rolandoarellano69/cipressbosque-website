@@ -4,7 +4,7 @@ import FamilyPeek from '../assets/img/Familyguy.jpeg'
 const AboutCipres = () => {
   return (
     <div className=" jadeSection md:grid md:grid-cols-2 grid grid-cols-1 grid-rows-1">
-      <div className=" items-center justify-center relative bg-center bg-cover bg-secondary">
+      <div className=" items-center justify-center relative bg-center bg-cover bg-secondary p-2">
         <div className=" flex items-center justify-center mt-8 z-10">
           <img src={logopeek2} alt="Logo" className="w-[10rem] h-[10rem] jadeSection  " />
         </div>
@@ -20,8 +20,8 @@ const AboutCipres = () => {
       </div>
 
       <div className='flex md:p-8 p-4 items-center'>
-        <img src={FamilyPeek} alt="Familia" className='md:rounded-bl-lg rounded-xl shadow-xl'/>
-        
+        <img src={FamilyPeek} alt="Familia" className='md:rounded-bl-lg rounded-xl shadow-xl' />
+
       </div>
     </div>
   )

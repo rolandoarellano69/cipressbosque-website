@@ -6,7 +6,7 @@ import { RiMapPinLine, RiPhoneLine } from 'react-icons/ri'
 
 const Footer = () => {
   return (
-    <footer className="bg-primary border-t-[1px] border-gray-500">
+    <footer className="bg-primary ">
       <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 lg:py-24 flex flex-col lg:flex-row items-center justify-between">
 
         {/* Logos */}
@@ -17,12 +17,7 @@ const Footer = () => {
 
         {/* Contenido de texto */}
         <div className="text-center lg:text-left lg:max-w-md">
-          <ul className='flex flex-col sm:flex-row items-center justify-center gap-10 mt-14 mb-8'>
-            <li className='list-none flex items-center gap-2 text-lg sm:text-base'> <RiMapPinLine className='text-lg' />Plaza Carrusel LA002</li>
-            <li className='list-none flex items-center gap-2 text-lg sm:text-base'> <RiPhoneLine className='text-lg' />6644049399</li>
-            <li className='text-lg sm:text-base mt-2 sm:mt-0'>Lunes a Viernes : 9:00 am - 6:00 pm</li>
-            <li className='text-lg sm:text-base  mt-2 sm:mt-0'>Sábado 9:00 am <br /> - 2 pm</li>
-          </ul>
+
 
           {/* Enlaces */}
           <ul className="flex flex-wrap justify-center gap-6 md:gap-8">
@@ -48,6 +43,22 @@ const Footer = () => {
               <Link className="hover:border-b-2 hover:border-gray-200 text-gray-200 transition hover:text-gray-200/75 cursor-pointer" to="/">
                 Contacto
               </Link>
+            </li>
+          </ul>
+          <ul className='flex sm:flex-row items-center justify-center  mt-14 mb-8'>
+            <li className='list-none flex items-center gap-4'>
+              <RiMapPinLine className='text-[30px]' />
+              Plaza Carrusel LA002
+            </li>
+            <li className='list-none flex items-center gap-2'>
+              <RiPhoneLine className='text-lg' />
+              6644049399
+            </li>
+            <li className='mt-2 sm:mt-0 '>
+              Lunes a Viernes : 9:00 am - 6:00 pm
+            </li>
+            <li className='mt-2 sm:mt-0'>
+              Sábado 9:00 am <br /> - 2 pm
             </li>
           </ul>
         </div>

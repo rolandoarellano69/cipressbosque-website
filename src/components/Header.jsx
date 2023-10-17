@@ -7,11 +7,16 @@ import logocipres from '../assets/img/logo cipres blanco-01.png'
 const Header = () => {
   const [isMenu , setIsMenu] = useState(false)
 
+  const handleLinkClick = () => {
+    setIsMenu(false);
+  }
+
+
   const toggleMenu = () =>{
     setIsMenu(!isMenu)
   }
   return (
-    <header className='fixed w-full shadow-xl top-0 left-0 z-30 px-8 py-5 bg-primary'>
+    <header className='fixed w-full shadow-xl top-0 left-0 z-40 px-8 py-5 bg-primary'>
    
       <nav className='flex items-center justify-between  h-7 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 
@@ -22,7 +27,7 @@ const Header = () => {
             </div>
         <div className='hidden md:block'>
           <div className='ml-4 flex items-center space-x-4'>
-            <Link to='home' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
+            <Link to='home' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer' >
               Ciprés
             </Link>
             <Link to='planta-arq' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
@@ -47,27 +52,34 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMenu && (  
           
-        <div className=' md:hidden absolute top-0 left-0 w-[65%] h-screen bg-secondary'>
-          
-          <div className='flex flex-col items-center justify-center h-full gap-4'>
-
-
-            <Link to='home' className='text-white hover:bg-white hover:text-black rounded-lg px-40 py-2 transition-colors duration-700 cursor-pointer'>
+        <div className=' animate__animated animate__fadeInLeft md:hidden fixed top-0 left-0 z-50 w-[65%] sm:w-[40%]  bg-primary flex flex-col items-center justify-center h-full gap-4
+        transition-all duration-300 ease-in-out
+        '>
+            <Link to='home' className='text-white hover:bg-white hover:text-black rounded-lg py-2 px-20 transition-colors duration-700 cursor-pointer' onClick={handleLinkClick}>
               Ciprés
             </Link>
-            <Link to='planta-arq' className='text-white hover:bg-white hover:text-black rounded-lg px-40 py-2 transition ease-in duration-500 cursor-pointer'>
+            <Link to='planta-arq' className='text-white hover:bg-white hover:text-black rounded-lg py-2 px-20  transition ease-in duration-500 cursor-pointer' onClick={handleLinkClick}>
               Modelos
             </Link>
-            <Link to='ubi' className='text-white hover:bg-white hover:text-black rounded-lg px-40 py-2 transition ease-in duration-500 cursor-pointer'>
+            <Link to='ubi' className='text-white hover:bg-white hover:text-black rounded-lg py-2 px-20  transition ease-in duration-500 cursor-pointer' onClick={handleLinkClick}>
               Ubicación
             </Link>
-            <Link to='/blog' className='text-white hover:bg-white hover:text-black rounded-lg px-40 py-2 transition ease-in duration-500 cursor-pointer'>
+            <Link to='/blog' className='text-white hover:bg-white hover:text-black rounded-lg py-2 px-20  transition ease-in duration-500 cursor-pointer' onClick={handleLinkClick}>
               Contacto
             </Link>
            
-          </div>                                                                                                                                                                                                                                                                                           
-        </div>
+          </div>          
+                                                                                                                                                                                                                                                                              
         )}  
+          {isMenu &&(
+          <div className=' md:hidden fixed top-0 left-0 z-40 w-full h-full bg-black bg-opacity-50'
+          onClick={toggleMenu}
+          >
+          </div>
+        
+        )}
+
+      
       </nav>
     </header>
   )

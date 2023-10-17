@@ -33,11 +33,11 @@ const HomePage = () => {
       <AboutCipres />
       <HouseCipres  />
       <PlantaArq /> 
-      <HouseCipres  />
       <Family2 />
       <Mapa />
       <Requi />
       <BtnWhatsapp /> 
+ 
       <Footer />
       </div>
     </>
