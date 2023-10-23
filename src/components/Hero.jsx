@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section
       id='home'
-      className="relative h-[100vh] bg-cover bg-center bg-no-repeat"
+      className="relative h-[100vh] bg-cover bg-center bg-no-repeat object-cover"
       style={{ backgroundImage: `url(${heroPeek})`, height: '100vh', backgroundSize: 'cover' }}
     >
       <div className=" px-4 py-32 flex items-center justify-center h-full -translate-y-16">

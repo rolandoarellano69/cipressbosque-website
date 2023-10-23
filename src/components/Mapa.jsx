@@ -1,5 +1,5 @@
 import React from 'react'
-import mapapeek from '../assets/img/mapa-01-01.png'
+import mapapeek from '../assets/img/mapa FINAL CIPRES-01.jpg'
 const Mapa = () => {
   return (
   <figure id='ubi' className=''>
