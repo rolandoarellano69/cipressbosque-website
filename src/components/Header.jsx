@@ -36,7 +36,7 @@ const Header = () => {
             <Link to='ubi' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
               Ubicación
             </Link>
-            <Link to='/blog' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
+            <Link to='form' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
               Contacto
             </Link>
             
@@ -64,7 +64,7 @@ const Header = () => {
             <Link to='ubi' className='text-white hover:bg-white hover:text-black rounded-lg py-2 px-20  transition ease-in duration-500 cursor-pointer' onClick={handleLinkClick}>
               Ubicación
             </Link>
-            <Link to='/blog' className='text-white hover:bg-white hover:text-black rounded-lg py-2 px-20  transition ease-in duration-500 cursor-pointer' onClick={handleLinkClick}>
+            <Link to='form' className='text-white hover:bg-white hover:text-black rounded-lg py-2 px-20  transition ease-in duration-500 cursor-pointer' onClick={handleLinkClick}>
               Contacto
             </Link>
            

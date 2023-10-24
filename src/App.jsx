@@ -12,6 +12,7 @@ import Footer from './components/Footer'
 import Page404 from './assets/pages/Page404'
 import AvisoPrivacidad from './assets/pages/AvisoPrivacidad'
 import BtnWhatsapp from './components/BtnWhatsapp'
+import Formulario from './components/Formulario'
 
 const App = () => {
   return (
@@ -35,8 +36,9 @@ const HomePage = () => {
       <PlantaArq /> 
       <Family2 />
       <Mapa />
-      <Requi />
+      {/* <Requi /> */}
       <BtnWhatsapp /> 
+      <Formulario />
  
       <Footer />
       </div>
