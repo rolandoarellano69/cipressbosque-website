@@ -16,39 +16,43 @@ const Header = () => {
     setIsMenu(!isMenu)
   }
   return (
-    <header className='fixed w-full shadow-xl top-0 left-0 z-40 px-8 py-5 bg-primary'>
-   
-      <nav className='flex items-center justify-between  h-7 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-
-            <div className='flex'>
-              <Link to='home'>
-                <img src={logocipres} alt=""className='w-[4rem] md:w-[7rem] md:hidden' />
-              </Link>
-            </div>
-        <div className='hidden md:block'>
-          <div className='ml-4 flex items-center space-x-4'>
-            <Link to='home' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer' >
-              Ciprés
-            </Link>
-            <Link to='planta-arq' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
-           Modelos
-            </Link>
-            <Link to='ubi' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
-              Ubicación
-            </Link>
-            <Link to='form' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
-              Contacto
-            </Link>
-            
-          </div>
-        </div>
-        <div className='md:hidden flex items-center'>
-          <button className='inline-flex items-center justify-center p-2 rounded-md text-white md:text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'
-          onClick={toggleMenu}
-          >
-          {isMenu ? <RiCloseLine size='1.5rem'/> : <RiMenuFill size='1.5rem' /> }
-          </button>
-        </div>
+    <header className='fixed w-full shadow-xl top-0 left-0 z-40 px-4 py-2 bg-primary'>
+    <nav className='h-[4rem] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  '>
+  <div className='md:grid grid-cols-3 items-center h-full hidden '>
+    {/* Primera mitad de los links */}
+    <div className='flex justify-end space-x-4 pr-2'>
+      <Link to='home' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
+        Ciprés
+      </Link>
+      <Link to='planta-arq' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
+        Modelos
+      </Link>
+    </div>
+    
+    {/* Logo en el centro */}
+    <div className='flex justify-center items-center'>
+      <Link to='home'>
+        <img src={logocipres} alt="Logo Ciprés" className='w-[4rem] md:w-[5rem]' />
+      </Link>
+    </div>
+    
+    {/* Segunda mitad de los links */}
+    <div className='flex justify-start space-x-4 pl-2'>
+      <Link to='ubi' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
+        Ubicación
+      </Link>
+      <Link to='form' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
+        Contacto
+      </Link>
+    </div>
+  </div>
+        <div className='md:hidden flex justify-end items-center'> {/* Modificado aquí */}
+    <button className='inline-flex items-center justify-center p-2 rounded-md text-white md:text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'
+    onClick={toggleMenu}
+    >
+    {isMenu ? <RiCloseLine size='1.5rem'/> : <RiMenuFill size='1.5rem' /> }
+    </button>
+</div>
         {/* Mobile Menu */}
         {isMenu && (  
           

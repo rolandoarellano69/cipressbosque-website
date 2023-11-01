@@ -5,11 +5,147 @@
 html {
   scroll-behavior: smooth;
 }
-::-webkit-scrollbar-thumb{
-  background-color: '#000';
+::-webkit-scrollbar-thumb {
+  background-color: "#000";
   border-radius: 10px;
 }
-body{
+body {
   @apply bg-primary text-gray-200;
+}
+.Parrafo-container {
+  z-index: 3;
+  position: absolute;
+  bottom: 0%;
+  background-color: #58642c;
+  opacity: 0.8;
+  padding: 3rem;
+  height: auto;
+}
+.cipres-container {
+  z-index: 3;
+  position: absolute;
+  bottom: 14%;
+  left: 4%;
+  width: 10rem;
+  height: 20rem;
+}
+.logo-container {
+  z-index: 0;
+  position: absolute;
+  top: 15%;
+  right: 1rem;
+  width: 21rem;
+  height: 20rem;
+}
 
+.hero-image-container {
+  z-index: 1;
+  margin-top: 3rem;
+  position: absolute;
+}
+
+.title-container {
+  z-index: 2;
+  position: absolute;
+  top: 6%;
+  right: 20rem;
+  width: 21rem;
+  height: 20rem;
+  font-size: 3rem;
+  line-height: 2.25rem;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .title-container {
+    top: 0%;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 0.7rem;
+    line-height: 1rem;
+    margin-top: 4rem;
+    width: auto;
+    height: auto;
+  }
+  .logo-container {
+    z-index: 0;
+    position: absolute;
+    top: 20%;
+    right: 0rem;
+    width: 15rem;
+    height: 10rem;
+  }
+  .hero-image-container {
+    z-index: 1;
+    margin-top: 6rem;
+  }
+  .cipres-container {
+    z-index: 3;
+    position: absolute;
+    bottom: 14%;
+    left: 4%;
+    width: 10rem;
+    height: 20rem;
+  }
+  .Parrafo-container {
+    z-index: 3;
+    position: absolute;
+    bottom: 0%;
+    background-color: #58642c;
+    opacity: 0.8;
+    padding: 2.8rem;
+    height: auto;
+  }
+  .cipres-container
+  {
+    z-index: 3;
+    position: absolute;
+    bottom: 20%;
+    left: 4%;
+    width: 13rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .title-container {
+    top: 3%;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 0.7rem;
+    line-height: 1rem;
+    margin-top: 4rem;
+    width: auto;
+    height: auto;
+  }
+  .logo-container {
+    z-index: 0;
+    position: absolute;
+    top: 15%;
+    right: 0rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  .hero-image-container {
+    z-index: 1;
+    margin-top: 6rem;
+    width: auto;
+    height: auto;
+  }
+  .cipres-container {
+    z-index: 3;
+    position: absolute;
+    bottom: 25%;
+    left: 4%;
+    width: 7rem;
+    height: 20rem;
+  }
+  .Parrafo-container {
+    z-index: 3;
+    position: absolute;
+    bottom: 0%;
+    background-color: #58642c;
+    opacity: 0.8;
+    padding: 1.8rem;
+    height: auto;
+  }
 }

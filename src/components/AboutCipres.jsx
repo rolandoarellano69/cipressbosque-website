@@ -1,29 +1,17 @@
 import React from 'react'
-import logopeek2 from '../assets/img/LOGO 3-01.png'
-import FamilyPeek from '../assets/img/Familyguy.jpeg'
+import heroPeek from '../assets/img/hero2.jpg'
+import logopeek from '../assets/img/logo cipres blanco-01.png'
 const AboutCipres = () => {
   return (
-    <div className=" jadeSection md:grid md:grid-cols-2 grid grid-cols-1 grid-rows-1">
-      <div className=" items-center justify-center relative bg-center bg-cover bg-secondary p-2">
-        <div className=" flex items-center justify-center mt-8 z-10">
-          <img src={logopeek2} alt="Logo" className="w-[10rem] h-[10rem] jadeSection  " />
+    <section className='relative text-red-500'>
+      <img src={heroPeek} alt="Casas Cipres" />
+      <div className=' absolute top-0 left-0 z-10 w-full h-screen flex flex-col justify-normal items-center mt-[4rem]'>
+        <div className='mb-4'>
+        <img src={logopeek} alt="logo" className='w-24 h-24 md:w-48 md:h-48 object-cover' />
         </div>
-
-        <p className="  text-justify m-10 z-10 p-10">
-          Es proyecto de únicamente 24 casas, ubicado en una zona de alto desarrollo, destacado por su gran conectividad, muy cerca de vialidades principales y centros comerciales.
-          Creando un equilibrio perfecto entre el estilo y la calidad de vida que mereces.
-        </p>
-        <div className="flex items-center justify-center">
-          {/* <img src={OBrDitPeek} alt="Logo" className='h-36 mt-4' /> */}
-          {/* <ObrDitIcon className="hover:text-green-500 h-36 z-10 mt-4" /> */}
-        </div>
+        <p className='text-white text-center  text-2xl md:text-5xl font-thin uppercase'>Conectividad, estilo <br /> <strong className='font-semibold tracking-wider'> Y CALIDAD DE VIDA.</strong></p>
       </div>
-
-      <div className='flex md:p-8 p-4 items-center'>
-        <img src={FamilyPeek} alt="Familia" className='md:rounded-bl-lg rounded-xl shadow-xl' />
-
-      </div>
-    </div>
+    </section>
   )
 }
 

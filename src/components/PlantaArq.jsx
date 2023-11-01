@@ -1,16 +1,41 @@
 import React from 'react'
-import PlantaArqPeek from '../assets/img/plantas brochure-04.png'
-import LogoCipres from '../assets/img/logo cipres blanco-01.png'
+import { RxTriangleRight } from 'react-icons/rx'
 
 
 const PlantaArq = () => {
   return (
-    <section id='planta-arq' className='md:p-8 p-4 relative bg-primary'>
-      <img src={PlantaArqPeek} alt="Planta" className='rounded-lg shadow-lg bg-gray-200' />
-      <div className="hidden lg:block absolute bottom-0 left-0 md:p-10 p-3  bg-primary rounded-tr-xl">
-        <img src={LogoCipres} alt="Cipres Logo" className='w-12 h-12' />
-      </div>
-    </section>
+    <section id='planta-arq' className='p-8 container mx-auto flex flex-col md:flex-row justify-around items-start md:items-center gap-8 bg-gray-200 text-gray-900'>
+    <ul className='w-full md:w-auto'> 
+      <li className='flex items-center gap-4 text-xl text-secondary'>
+        <RxTriangleRight className='text-primary text-2xl' /> Sala
+      </li>
+      <li className='flex items-center gap-4 text-xl  text-secondary'>
+        <RxTriangleRight className='text-primary text-2xl' />Comedor
+      </li>
+      <li className='flex items-center gap-4 text-xl  text-secondary'>
+        <RxTriangleRight className='text-primary text-2xl' />Cocina
+      </li>
+    </ul>
+    <ul className='w-full md:w-auto'>
+      <li className='flex items-center gap-4 text-xl  text-secondary'>
+        <RxTriangleRight className='text-primary text-2xl' /> 1/2 Baño
+      </li>
+      <li className='flex items-center gap-4 text-xl  text-secondary'>
+        <RxTriangleRight className='text-primary text-2xl' />Patio de servicio
+      </li>
+      <li className='flex items-center gap-4 text-xl  text-secondary'>
+        <RxTriangleRight className='text-primary text-2xl' />Cochera para 1 auto
+      </li>
+    </ul>
+    <ul className='w-full md:w-auto'>
+      <li className='flex items-center gap-4 text-xl  text-secondary'>
+        <RxTriangleRight className='text-primary text-2xl' />2 Recámaras
+      </li>
+      <li className='flex items-center gap-4 text-xl  text-secondary'>
+        <RxTriangleRight className='text-primary text-2xl' />Baño completo
+      </li>
+    </ul>
+  </section>
   )
 }
 

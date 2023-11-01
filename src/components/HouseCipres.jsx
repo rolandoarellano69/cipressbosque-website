@@ -1,14 +1,27 @@
 import React from 'react'
-import CipresHouse from '../assets/img/hero.jpg'
-import LogoCipres from '../assets/img/logo cipres blanco-01.png'
+import fondoPeek from '../assets/img/fondo-06.webp'
+import plantabajaPeek from '../assets/img/PLANTA ALTA-06.png'
+import plantaaltaPeek from '../assets/img/PLANTA BAJA-06.png'
+
 const HouseCipres = () => {
   return (
-    <figure className='md:p-8 p-4 relative'>
-      <img src={CipresHouse} alt="Jade Casas" className='rounded-lg shadow-lg' />
-      <div className="absolute bottom-0 left-0 md:p-10 p-3  bg-primary rounded-tr-xl">
-        <img src={LogoCipres} alt="Cipres Logo" className='w-12 h-12' />
+    <section className="relative bg-gray-200 md:flex md:flex-col md:items-center">
+      <div className=" md:bg-transparent bg-secondary w-full z-10  py-6 md:py-8">
+        <p className=" text-white text-center text-2xl md:text-5xl font-thin uppercase">
+          Conoce la Distribución <br />
+          <strong className="font-semibold tracking-wider">de tu nuevo hogar.</strong>
+        </p>
       </div>
-    </figure>
+      <img src={fondoPeek} alt="" className=" absolute w-full object-cover h-64 md:h-auto " />
+      <div className=" flex flex-col  mt-4 space-y-4 md:flex-row md:mt-4 md:space-y-0 md:space-x-4">
+        <figure>
+          <img src={plantaaltaPeek} alt="Planta Alta" className="w-full h-auto md:h-[35rem] md:w-[35rem] relative" />
+        </figure>
+        <figure>
+          <img src={plantabajaPeek} alt="Planta Baja" className="w-full h-auto md:h-[35rem] md:w-[35rem] relative" />
+        </figure>
+      </div>
+    </section>
   )
 }
 
