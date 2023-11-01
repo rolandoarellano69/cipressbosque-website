@@ -38,13 +38,7 @@ const HomePage = () => {
         <Family2 />
         <Formulario />
         <BtnWhatsapp />
-        {/* 
-     
-  
-     
-      */}
-
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   )
