@@ -10,7 +10,7 @@ html {
   border-radius: 10px;
 }
 body {
-  @apply bg-primary text-gray-200;
+  @apply bg-white text-gray-200;
 }
 .Parrafo-container {
   z-index: 3;
@@ -48,8 +48,8 @@ body {
 .title-container {
   z-index: 2;
   position: absolute;
-  top: 6%;
-  right: 20rem;
+  top: 10%;
+  right: 35rem;
   width: 21rem;
   height: 20rem;
   font-size: 3rem;
@@ -61,7 +61,7 @@ body {
     top: 0%;
     right: 35%;
     transform: translateX(50%);
-    font-size: 0.7rem;
+    font-size: 1rem;
     line-height: 1rem;
     margin-top: 4rem;
     width: auto;
@@ -104,7 +104,7 @@ body {
     top: 3%;
     right: 30%;
     transform: translateX(50%);
-    font-size: 0.7rem;
+    font-size: .7rem;
     line-height: 1rem;
     margin-top: 4rem;
     width: auto;
@@ -141,4 +141,49 @@ body {
     padding: 1.8rem;
     height: auto;
   }
+}
+@media (max-width: 1024px){
+  .title-container {
+    top: 3%;
+    right: 30%;
+    transform: translateX(50%);
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin-top: 4rem;
+    width: auto;
+    height: auto;
+  }
+  .logo-container {
+    z-index: 0;
+    position: absolute;
+    top: 18%;
+    right: 0rem;
+    width: 20rem;
+    height: 10rem;
+  }
+  .hero-image-container {
+    z-index: 1;
+    margin-top: 6rem;
+    width: auto;
+    height: auto;
+  }
+  .cipres-container {
+    z-index: 3;
+    position: absolute;
+    bottom: 13%;
+    left: 4%;
+    width: 12rem;
+    height: 20rem;
+  }
+  .Parrafo-container {
+    z-index: 3;
+    position: absolute;
+    bottom: 0%;
+    background-color: #58642c;
+    opacity: 0.8;
+    padding: 1.8rem;
+    height: auto;
+  }
+
+
 }

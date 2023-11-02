@@ -12,6 +12,7 @@ const HouseCipres = () => {
           <strong className="font-semibold tracking-wider">de tu nuevo hogar.</strong>
         </p>
       </div>
+      
       <img src={fondoPeek} alt="" className=" absolute w-full object-cover h-64 md:h-auto " />
       <div className=" flex flex-col  mt-4 space-y-4 md:flex-row md:mt-4 md:space-y-0 md:space-x-4">
         <figure>

@@ -4,8 +4,8 @@ import { RxTriangleRight } from 'react-icons/rx'
 
 const PlantaArq = () => {
   return (
-    <section id='planta-arq' className='p-8 container mx-auto flex flex-col md:flex-row justify-around items-start md:items-center gap-8 bg-gray-200 text-gray-900'>
-    <ul className='w-full md:w-auto'> 
+    <section id='planta-arq' className='mt-[15rem] container mx-auto flex flex-col md:flex-row justify-around items-start md:items-center gap-8 bg-white text-gray-900'>
+    <ul className='w-full md:w-auto text-3xl'> 
       <li className='flex items-center gap-4 text-xl text-secondary'>
         <RxTriangleRight className='text-primary text-2xl' /> Sala
       </li>

@@ -10,7 +10,7 @@ import contadoPeek from '../assets/img/contado.png'
 
 const Family2 = () => {
   return (
-    <section className='p-4 md:p-8 relative'>
+    <section className='p-4 md:p-8 relative bg-primary'>
        <div className='flex justify-center items-center mb-4 md:mb-8'>
         <img src={logoPeek} alt="logo" className='w-24 h-24 md:w-48 md:h-48 object-cover' />
       </div>
