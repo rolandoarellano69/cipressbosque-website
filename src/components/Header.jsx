@@ -17,7 +17,7 @@ const Header = () => {
   }
   return (
     <header className='fixed w-full shadow-xl top-0 left-0 z-40 px-4 py-2 bg-primary'>
-    <nav className='h-[4rem] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  '>
+    <nav className='h-[10rem] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  '>
   <div className='md:grid grid-cols-3 items-center h-full hidden '>
     {/* Primera mitad de los links */}
     <div className='flex justify-end space-x-4 pr-2'>
@@ -32,7 +32,7 @@ const Header = () => {
     {/* Logo en el centro */}
     <div className='flex justify-center items-center'>
       <Link to='home'>
-        <img src={logocipres} alt="Logo Ciprés" className='w-[4rem] md:w-[5rem]' />
+        <img src={logocipres} alt="Logo Ciprés" className='w-[4rem] md:w-[10rem]' />
       </Link>
     </div>
     

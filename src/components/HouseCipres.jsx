@@ -5,8 +5,8 @@ import plantaaltaPeek from '../assets/img/PLANTA BAJA-06.png'
 
 const HouseCipres = () => {
   return (
-    <section className="relative bg-gray-200 md:flex md:flex-col md:items-center">
-      <div className=" md:bg-transparent bg-secondary w-full z-10  py-6 md:py-8">
+    <section className="relative bg-white md:flex md:flex-col md:items-center">
+      <div className=" md:bg-transparent bg-secondary w-full z-10 mt-[4rem]  py-6 md:py-8">
         <p className=" text-white text-center text-2xl md:text-5xl font-thin uppercase">
           Conoce la Distribución <br />
           <strong className="font-semibold tracking-wider">de tu nuevo hogar.</strong>
@@ -14,12 +14,12 @@ const HouseCipres = () => {
       </div>
       
       <img src={fondoPeek} alt="" className=" absolute w-full object-cover h-64 md:h-auto " />
-      <div className=" flex flex-col  mt-4 space-y-4 md:flex-row md:mt-4 md:space-y-0 md:space-x-4">
+      <div className=" flex flex-col  mt-8 space-y-4 md:flex-row  md:space-y-0 md:space-x-4">
         <figure>
-          <img src={plantaaltaPeek} alt="Planta Alta" className="w-full h-auto md:h-[35rem] md:w-[35rem] relative" />
+          <img src={plantaaltaPeek} alt="Planta Alta" className="w-full h-auto  md:h-[40rem] md:w-[40rem] relative" />
         </figure>
         <figure>
-          <img src={plantabajaPeek} alt="Planta Baja" className="w-full h-auto md:h-[35rem] md:w-[35rem] relative" />
+          <img src={plantabajaPeek} alt="Planta Baja" className="w-full h-auto md:h-[40rem] md:w-[40rem] relative" />
         </figure>
       </div>
     </section>
