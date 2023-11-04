@@ -3,7 +3,7 @@ import mapapeek from '../assets/img/mapa FINAL CIPRES-01.png'
 import {PiMapPinFill} from 'react-icons/pi'
 const Mapa = () => {
   return (
-    <section className='bg-white p-10'>
+    <section id='ubi' className='bg-white p-10'>
       <div className="container mx-auto  mt-[3rem] p-4 md:p-0">
         <h1 className='text-secondary text-center text-3xl md:text-5xl font-bold tracking-wider mb-2'>CONECTIVIDAD</h1>
         <h2 className='text-primary font-semibold text-center text-xl md:text-3xl uppercase tracking-wide mb-2 '>Vialidades Principales</h2>
