@@ -17,7 +17,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <img src={LogoObr} alt="logo2" className="w-32 h-14 md:w-44 md:h-24" />
+            <img src={LogoObr} alt="logo2" className="w-32 h-14 md:w-48 md:h-20" />
           </div>
 
           {/* Contenido de texto */}
