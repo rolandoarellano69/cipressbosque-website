@@ -33,7 +33,7 @@ const HomePage = () => {
         <Hero />
         <AboutCipres />
         <HouseCipres />
-        {/* <PlantaArq /> */}
+        <PlantaArq /> 
         <Mapa />
         <Family2 />
         <Formulario />
