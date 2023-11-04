@@ -20,11 +20,11 @@ const Header = () => {
     <nav className='h-[10rem] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  '>
   <div className='md:grid grid-cols-3 items-center h-full hidden '>
     {/* Primera mitad de los links */}
-    <div className='flex justify-end space-x-4 pr-2'>
-      <Link to='home' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
+    <div className='flex justify-end space-x-4 py-2'>
+      <Link to='home' className='text-white bg-secondary   rounded-lg px-6 py-2  transition ease-in duration-700 cursor-pointer'>
         Ciprés
       </Link>
-      <Link to='planta-arq' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
+      <Link to='planta-arq' className='text-white bg-secondary  rounded-lg px-6 py-2 transition ease-in duration-700 cursor-pointer'>
         Modelos
       </Link>
     </div>
@@ -37,11 +37,11 @@ const Header = () => {
     </div>
     
     {/* Segunda mitad de los links */}
-    <div className='flex justify-start space-x-4 pl-2'>
-      <Link to='ubi' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
+    <div className='flex justify-start items-center space-x-4 pl-2'>
+      <Link to='ubi' className='text-white  bg-secondary rounded-lg px-6 py-2  transition ease-in duration-700 cursor-pointer'>
         Ubicación
       </Link>
-      <Link to='form' className='text-white hover:bg-white hover:text-black rounded-lg p-2 transition ease-in duration-700 cursor-pointer'>
+      <Link to='form' className='text-white bg-secondary  rounded-lg px-6 py-2 transition ease-in duration-700 cursor-pointer'>
         Contacto
       </Link>
     </div>
@@ -59,16 +59,16 @@ const Header = () => {
         <div className=' animate__animated animate__fadeInLeft md:hidden fixed top-0 left-0 z-50 w-[65%] sm:w-[40%]  bg-primary flex flex-col items-center justify-center h-full gap-4
         transition-all duration-300 ease-in-out
         '>
-            <Link to='home' className='text-white hover:bg-white hover:text-black rounded-lg py-2 px-20 transition-colors duration-700 cursor-pointer' onClick={handleLinkClick}>
+            <Link to='home' className='text-white  bg-secondaryrounded-lg py-2 px-20 transition-colors duration-700 cursor-pointer' onClick={handleLinkClick}>
               Ciprés
             </Link>
-            <Link to='planta-arq' className='text-white hover:bg-white hover:text-black rounded-lg py-2 px-20  transition ease-in duration-500 cursor-pointer' onClick={handleLinkClick}>
+            <Link to='planta-arq' className='text-white  bg-secondary rounded-lg py-2 px-20  transition ease-in duration-500 cursor-pointer' onClick={handleLinkClick}>
               Modelos
             </Link>
-            <Link to='ubi' className='text-white hover:bg-white hover:text-black rounded-lg py-2 px-20  transition ease-in duration-500 cursor-pointer' onClick={handleLinkClick}>
+            <Link to='ubi' className='text-white  bg-secondary rounded-lg py-2 px-20  transition ease-in duration-500 cursor-pointer' onClick={handleLinkClick}>
               Ubicación
             </Link>
-            <Link to='form' className='text-white hover:bg-white hover:text-black rounded-lg py-2 px-20  transition ease-in duration-500 cursor-pointer' onClick={handleLinkClick}>
+            <Link to='form' className='text-white  bg-secondary rounded-lg py-2 px-20  transition ease-in duration-500 cursor-pointer' onClick={handleLinkClick}>
               Contacto
             </Link>
            
