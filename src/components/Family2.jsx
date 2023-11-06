@@ -21,12 +21,12 @@ const Family2 = () => {
         <h1 className='uppercase text-center text-xl md:text-2xl font-bold tracking-widest mb-2'>Aplica tu crédito</h1>
         <span className='px-2 py-2 bg-secondary rounded-lg text-lg md:text-xl tracking-widest mb-2'>Para vivir o para invertir</span>
       </div>
-      <div className='flex flex-wrap justify-center mt-[5rem] space-x-4 md:space-x-6 gap-4'>
-        <img src={infonavitPeek} alt="Infonavit" className='w-[50%] h-auto md:w-[10rem] md:h-[10rem] mb-4 md:mb-0' />
-        <img src={bancarioPeek} alt="Bancario" className='w-[50%]  h-auto md:w-[10rem] md:h-[10rem] mb-4 md:mb-0' />
-        <img src={ecoamericanaPeek} alt="Ecoamericana" className='w-[50%]  h-auto md:w-[10rem] md:h-[10rem] mb-4 md:mb-0' />
-        <img src={contadoPeek} alt="Contado" className='w-[50%]  h-auto md:w-[10rem] md:h-[10rem] mb-4 md:mb-0' />
-        <img src={fovissstePeek} alt="Fovissste" className='w-[50%]  h-auto md:w-[10rem] md:h-[10rem] mb-4 md:mb-0' />
+      <div className='flex flex-wrap justify-center items-center mt-[5rem] space-x-4 md:space-x-6 gap-4'>
+        <img src={infonavitPeek} alt="Infonavit" className='w-[50%] h-auto md:w-[10rem] md:h-[10rem] mb-4 md:mb-0 translate-y-3' />
+        <img src={bancarioPeek} alt="Bancario" className='w-[50%]  h-auto md:w-[10rem] md:h-[10rem] mb-4 md:mb-0 translate-y-3' />
+        <img src={ecoamericanaPeek} alt="Ecoamericana" className='w-[50%]  h-auto md:w-[10rem] md:h-[10rem] mb-4 md:mb-0 translate-y-1' />
+        <img src={contadoPeek} alt="Contado" className='w-[50%]  h-auto md:w-[10rem] md:h-[10rem] mb-4 md:mb-0 translate-y-1' />
+        <img src={fovissstePeek} alt="Fovissste" className='w-[50%]  h-auto md:w-[10rem] md:h-[10rem] mb-4 md:mb-0 translate-y-2' />
       </div>
     </section>
   )
