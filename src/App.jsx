@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import AboutCipres from './components/AboutCipres'
-import HouseCipres from './components/HouseCipres'
 import PlantaArq from './components/PlantaArq'
 import Family2 from './components/Family2'
 
@@ -32,7 +31,7 @@ const HomePage = () => {
         <Header />
         <Hero />
         <AboutCipres />
-        <HouseCipres />
+    
         <PlantaArq /> 
         <Mapa />
         <Family2 />

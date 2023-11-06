@@ -1,11 +1,11 @@
 import React from 'react'
-import isotipoPeek from '../assets/img/ISOTIPO-06 (1).png'
+import isotipoPeek from '../assets/img/ISOTIPO 2.png'
 import logoPeek from '../assets/img/logo cipres blanco-01.png'
 import infonavitPeek from '../assets/img/infonavit.png'
 import fovissstePeek from '../assets/img/fovissste.png'
 import bancarioPeek from '../assets/img/bancario.png'
 import ecoamericanaPeek from '../assets/img/ecoamericana.png'
-import contadoPeek from '../assets/img/contado.png'
+import contadoPeek from '../assets/img/PUERQUITO-06.png'
 
 
 const Family2 = () => {
@@ -14,8 +14,8 @@ const Family2 = () => {
       <div className='flex justify-center items-center mb-4 md:mb-8'>
         <img src={logoPeek} alt="logo" className='w-[10rem] h-[8rem] md:w-[12rem] md:h-[8rem] object-cover mb-7' />
       </div>
-      <div className='absolute right-0 top-1/2 transform -translate-y-1/2 w-[50%] h-[100%] md:w-[50%] md:h-[100%]'>
-        <img src={isotipoPeek} alt="isotipo" className='object-cover w-full h-full' />
+      <div className='absolute right-10 md:right-0 top-1/2 transform -translate-y-1/2 lg:w-[50%] h-[100%] '>
+        <img src={isotipoPeek} alt="isotipo" className='object-cover hidden md:block w-[100%] h-[100%]' />
       </div>
       <div className='flex flex-col justify-center items-center mb-4'>
         <h1 className='uppercase text-center text-xl md:text-2xl font-bold tracking-widest mb-2'>Aplica tu crédito</h1>
