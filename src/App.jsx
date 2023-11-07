@@ -5,7 +5,7 @@ import Hero from './components/Hero'
 import AboutCipres from './components/AboutCipres'
 import PlantaArq from './components/PlantaArq'
 import Family2 from './components/Family2'
-
+import Headroom from 'react-headroom'
 import Mapa from './components/Mapa'
 import Footer from './components/Footer'
 import Page404 from './assets/pages/Page404'
@@ -28,7 +28,9 @@ const HomePage = () => {
   return (
     <>
       <div className='app'>
+        <Headroom>
         <Header />
+        </Headroom>
         <Hero />
         <AboutCipres />
     

@@ -3,6 +3,7 @@ import { RiCloseLine, RiMenuFill } from 'react-icons/ri'
 import { Link } from 'react-scroll'
 //imagenes
 import logocipres from '../assets/img/logo cipres blanco-01.png'
+import Headroom from 'react-headroom'
 
 const Header = () => {
   const [isMenu , setIsMenu] = useState(false)
@@ -16,7 +17,9 @@ const Header = () => {
     setIsMenu(!isMenu)
   }
   return (
-    <header  className='fixed w-full shadow-xl top-0 left-0 z-40 px- py-2 bg-primary'>
+
+    <Headroom>
+    <header  className=' w-full shadow-xl top-0 left-0 z-40 px- py-2 bg-primary'>
     <nav className='h-[8rem] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  '>
   <div className='md:grid grid-cols-3 items-center h-full hidden '>
     {/* Primera mitad de los links */}
@@ -86,6 +89,7 @@ const Header = () => {
       
       </nav>
     </header>
+    </Headroom>
   )
 }
 
