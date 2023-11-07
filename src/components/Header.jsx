@@ -16,8 +16,8 @@ const Header = () => {
     setIsMenu(!isMenu)
   }
   return (
-    <header  className='fixed w-full shadow-xl top-0 left-0 z-40 px-4 py-2 bg-primary'>
-    <nav className='h-[10rem] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  '>
+    <header  className='fixed w-full shadow-xl top-0 left-0 z-40 px- py-2 bg-primary'>
+    <nav className='h-[8rem] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  '>
   <div className='md:grid grid-cols-3 items-center h-full hidden '>
     {/* Primera mitad de los links */}
     <div className='flex justify-end space-x-4 py-2'>

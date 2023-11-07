@@ -7,7 +7,7 @@ import 'animate.css'
 
 const Hero = () => {
   return (
-    <div id='home' className="relative mt-[10rem]  bg-primary">
+    <div id='home' className="relative mt-[8rem]  bg-primary">
       <div className='w-full py-4 bg-secondary'></div>
       <img src={heroPeek} alt="" className='animate__animated animate__bounceInLeft'/>
     
