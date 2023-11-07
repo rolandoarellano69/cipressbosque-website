@@ -28,9 +28,9 @@ const HomePage = () => {
   return (
     <>
       <div className='app'>
-        <Headroom>
+    
         <Header />
-        </Headroom>
+
         <Hero />
         <AboutCipres />
     
