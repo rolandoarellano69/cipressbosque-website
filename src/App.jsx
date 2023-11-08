@@ -30,10 +30,8 @@ const HomePage = () => {
       <div className='app'>
     
         <Header />
-
         <Hero />
         <AboutCipres />
-    
         <PlantaArq /> 
         <Mapa />
         <Family2 />
